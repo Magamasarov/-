@@ -1,0 +1,120 @@
+1)number = float(input("Введите число: "))
+if number < 0:
+    print("Число отрицательное")else:
+    print("Число неотрицательное")
+
+
+
+2)
+number = int(input("Введите число: "))
+if number % 2 == 0:
+    print("Число четное")else:
+    print("Число нечетное")
+
+
+
+3)
+number = int(input("Введите число: "))
+count = len(str(abs(number)))
+print("Количество цифр в числе:", count)
+
+
+
+4)
+numbers = [1, 2, 3, 4, 5]
+sum_of_numbers = sum(numbers)
+print("Сумма элементов списка:", sum_of_numbers)
+
+
+
+5)
+numbers = '12,34,56'
+number_list = numbers.split(',')
+sum_of_numbers = sum(map(int, number_list)) 
+print("Сумма чисел:", sum_of_numbers)
+
+
+
+6)
+date = '2025-12-31'
+year, month, day = date.split('-')
+formatted_date = (day, month, year)
+print(formatted_date)
+
+
+
+
+7)
+
+
+
+8)
+
+
+
+9)
+dct1 = {
+    'a': 1,    'b': 2,
+}
+dct2 = {    'c': 3,
+    'd': 4,}
+merged_dict = {**dct1, **dct2} 
+print(merged_dict)
+
+
+
+
+10)
+
+
+11)
+def get_max_min(numbers):
+    result = {
+        'max': max(numbers),
+        'min': min(numbers)
+    }
+    return result
+
+# Пример использования функции
+
+numbers = [5, 3, 9, 1, 7]
+result = get_max_min(numbers)
+print(result)
+
+
+
+
+12)
+def get_divisors(numbers):
+    result = []
+    for num in numbers:
+        divisors = []
+        for i in range(1, num+1):
+            if num % i == 0:
+                divisors.append(i)
+                result.append(divisors)
+    return result
+
+# Пример использования
+numbers = [10, 7, 16, 24]
+divisors = get_divisors(numbers)
+print(divisors)
+
+
+
+13)
+
+
+
+14)
+import random
+def random_color():
+    colors = ['красный', 'синий', 'зеленый', 'желтый', 'оранжевый']
+    return random.choice(colors)
+
+# пример использования
+color = random_color()
+print(color)
+
+
+
